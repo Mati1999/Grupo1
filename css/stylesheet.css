@@ -1,0 +1,79 @@
+/*COMMON--------------------*/
+body {
+  font-family: 'Lato', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: bolder;
+}
+
+.container-fluid {
+  padding: 0px !important;
+}
+
+/*HEADER---------------------*/
+
+
+/*WELCOME-----------------------*/
+.welcome h1 {
+  border-bottom: 2px solid;
+  padding-bottom: 15px;
+}
+
+/*FOOTER---------------------*/
+footer .contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  color: white;
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+}
+
+footer .contact h5 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+footer .contact ion-icon {
+  font-size: 32px;
+  margin-left: 8px;
+  margin-right: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+footer p {
+  margin: 0px;
+  text-align: center;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 50px;
+}
+
+/*PRODUCTS------------------*/
+.products {
+  justify-content: space-around;
+}
+
+.products .card {
+  margin-bottom: 15px;
+}
+
+.products button {
+  margin-bottom: 15px;
+}
+
+.products a {
+  text-decoration: none;
+  color: white;
+}
