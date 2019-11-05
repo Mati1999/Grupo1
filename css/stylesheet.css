@@ -77,3 +77,9 @@ footer .copyright {
   text-decoration: none;
   color: white;
 }
+
+.categorias {
+  display: flex;
+  j
+  border-right: 2px solid;
+}
