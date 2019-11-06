@@ -1,3 +1,6 @@
+body{
+
+}
 .titulo2.text-center.p-5{
   font-family: 'Montserrat';
 }
@@ -5,8 +8,8 @@
 .card-body{
     font-family: 'Montserrat';
 }
-.car-header{
-  padding: .75rem -0.75rem;
+.card-header{
+  padding: 0px !important;
 }
 
 .btn.btn-link.collapsed{
@@ -20,6 +23,10 @@
 .mb-0{
   color: white;
   background-color: black;
+}
+
+.text-center.header{
+  font-family: 'Montserrat';
 }
 /*FOOTER---------------------*/
 footer .contact {
