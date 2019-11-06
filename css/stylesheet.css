@@ -12,16 +12,36 @@ h1, h2, h3, h4, h5, h6  {
   padding: 0px !important;
 }
 
+.title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /*HEADER---------------------*/
 header {
-  
+
 }
 
 
 /*WELCOME-----------------------*/
-.welcome h1 {
-  border-bottom: 2px solid;
-  padding-bottom: 15px;
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../img/bg-home.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.welcome h1, p {
+  color: white;
+}
+
+/*ABOUT-----------------------*/
+.about-us, .about-us div p {
+  color: black;
 }
 
 /*FOOTER---------------------*/
@@ -64,23 +84,34 @@ footer .copyright {
 }
 
 /*PRODUCTS------------------*/
-.products {
+.section-products {
+  margin-bottom: 20px;
+}
+
+.products-list {
+  display: flex;
+  flex-flow: wrap;
   justify-content: space-around;
 }
 
-.products input {
+.filters {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.section-products input {
   margin-bottom: 15px;
 }
 
-.products .card {
+.section-products .card {
   margin-bottom: 15px;
 }
 
-.products button {
+.section-products button {
   margin-bottom: 15px;
 }
 
-.products a {
+.section-products a {
   text-decoration: none;
   color: white;
 }
