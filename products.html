@@ -10,12 +10,9 @@
 
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <!--ISOTOPE-->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <!--GOOGLE FONTS AND ICONS-->
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
@@ -35,7 +32,7 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
@@ -61,26 +58,27 @@
       <!--PRODUCTOS-->
       <h2 class="display-5 text-center">PRODUCTOS</h2>
       <div class="container-fluid d-flex row">
-        <div class="container-fluid categorias col-12 col-md-3 col-lg-3 d-flex">
+        <div class="container categorias col-12 col-md-3 col-lg-3 d-flex">
           <ul class="filters">
             <li>
-              <a data-filter="*" href="#">Todos</a>
+              <a data-filter="*" id="todos" href="#">Todos</a>
             </li>
             <li>
-              <a data-filter=".vinos" href="#">Vinos</a>
+              <a data-filter=".vinos" id="vinos" href="#">Vinos</a>
             </li>
             <li>
-              <a data-filter=".gaseosas" href="#">Gaseosas</a>
+              <a data-filter=".gaseosas" id="gaseosas" href="#">Gaseosas</a>
             </li>
             <li>
-              <a data-filter=".aperitivos" href="#">Aperitivos</a>
+              <a data-filter=".aperitivos" id="aperitivos" href="#">Aperitivos</a>
             </li>
           </ul>
         </div>
 
-        <div class="container-fluid products col-12 col-md-9 col-lg-9">
-          <div class="row products grid">
-            <div class="card vinos" data-category="vinos" style="width: 18rem;">
+        <div class="container products col-12 col-md-9 col-lg-9">
+          <input type="text" id="search" placeholder="Filtrar" value="">
+          <div class="row products grid" id="grid">
+            <div class="card grid-item vinos" style="width: 18rem;">
               <img src="img/bebida-1.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Bebida 1</h5>
@@ -88,7 +86,7 @@
                 <a href="#" class="btn btn-primary">Agregar al carro</a>
               </div>
             </div>
-            <div class="card vinos" data-category="vinos" style="width: 18rem;">
+            <div class="card grid-item vinos" style="width: 18rem;">
               <img src="img/bebida-2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Bebida 2</h5>
@@ -96,7 +94,7 @@
                 <a href="#" class="btn btn-primary">Agregar al carro</a>
               </div>
             </div>
-            <div class="card gaseosas" data-category="gaseosas" style="width: 18rem;">
+            <div class="card grid-item gaseosas" style="width: 18rem;">
               <img src="img/bebida-3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Bebida 3</h5>
@@ -104,7 +102,7 @@
                 <a href="#" class="btn btn-primary">Agregar al carro</a>
               </div>
             </div>
-            <div class="card gaseosas" data-category="gaseosas" style="width: 18rem;">
+            <div class="card grid-item gaseosas" style="width: 18rem;">
               <img src="img/bebida-4.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Bebida 4</h5>
@@ -112,7 +110,7 @@
                 <a href="#" class="btn btn-primary">Agregar al carro</a>
               </div>
             </div>
-            <div class="card aperitivos" data-category="aperitivos" style="width: 18rem;">
+            <div class="card grid-item aperitivos" style="width: 18rem;">
               <img src="img/bebida-5.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Bebida 5</h5>
@@ -120,7 +118,7 @@
                 <a href="#" class="btn btn-primary">Agregar al carro</a>
               </div>
             </div>
-            <div class="card aperitivos" data-category="aperitivos" style="width: 18rem;">
+            <div class="card grid-item aperitivos" style="width: 18rem;">
               <img src="img/bebida-6.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Bebida 6</h5>

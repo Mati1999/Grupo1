@@ -13,6 +13,9 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 /*HEADER---------------------*/
+header {
+  
+}
 
 
 /*WELCOME-----------------------*/
@@ -63,6 +66,10 @@ footer .copyright {
 /*PRODUCTS------------------*/
 .products {
   justify-content: space-around;
+}
+
+.products input {
+  margin-bottom: 15px;
 }
 
 .products .card {
