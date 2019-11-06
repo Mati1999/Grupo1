@@ -35,7 +35,7 @@ header {
   background-position: center center;
 }
 
-.welcome h1, p {
+.welcome h1, h5 {
   color: white;
 }
 
@@ -99,10 +99,6 @@ footer .copyright {
   list-style-type: none;
 }
 
-.section-products input {
-  margin-bottom: 15px;
-}
-
 .section-products .card {
   margin-bottom: 15px;
 }
@@ -114,9 +110,4 @@ footer .copyright {
 .section-products a {
   text-decoration: none;
   color: white;
-}
-
-.categorias {
-  display: flex;
-  border-right: 2px solid;
 }

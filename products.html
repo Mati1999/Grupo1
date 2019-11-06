@@ -58,7 +58,7 @@
       <!--PRODUCTOS-->
       <h2 class="display-5 text-center title">PRODUCTOS</h2>
       <div class="container-fluid d-flex row">
-        <div class="container categorias col-12 col-md-3 col-lg-3 d-flex">
+        <div class="container categorias col-12 col-md-12 col-lg-3 d-flex">
           <ul class="filters">
             <li>
               <a data-filter="*" id="todos" href="#">Todos</a>
@@ -72,12 +72,14 @@
             <li>
               <a data-filter=".aperitivos" id="aperitivos" href="#">Aperitivos</a>
             </li>
+            <li>
+              <input type="text" id="search" placeholder="Filtrar" style="width:100%;" value="">
+            </li>
           </ul>
         </div>
 
-        <div class="container section-products col-12 col-md-9 col-lg-9">
-          <input type="text" id="search" placeholder="Filtrar" value="">
-          <div class="container products-list grid" id="grid">
+        <div class="container section-products col-12 col-md-12 col-lg-9">
+          <div class="container-fluid products-list grid" id="grid">
             <div class="card grid-item vinos" style="width: 18rem;">
               <img src="img/bebida-1.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
