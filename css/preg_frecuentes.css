@@ -1,0 +1,61 @@
+.titulo2.text-center.p-5{
+  font-family: 'Montserrat';
+}
+
+.card-body{
+    font-family: 'Montserrat';
+}
+.car-header{
+  padding: .75rem -0.75rem;
+}
+
+.btn.btn-link.collapsed{
+
+  font-family: 'Montserrat';
+  text-decoration: none;
+  color: white;
+  background-color: black;
+
+}
+.mb-0{
+  color: white;
+  background-color: black;
+}
+/*FOOTER---------------------*/
+footer .contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  color: white;
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+}
+
+footer .contact h5 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+footer .contact ion-icon {
+  font-size: 32px;
+  margin-left: 8px;
+  margin-right: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+footer p {
+  margin: 0px;
+  text-align: center;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 50px;
+}
