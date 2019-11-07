@@ -20,147 +20,27 @@
 
     <!--APP JAVASCRIPT-->
     <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/commonComponents.js"></script>
 
   </head>
   <body>
     <div class="container-fluid">
 
       <!--HEADER-->
-      <header class="main-header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">ICON</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <custom-header>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">PRODUCTOS <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="boliches.html">BOLICHES </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="promociones.html">PROMOCIONES </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">LOGIN </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="registrate.html">REGISTRATE </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+      </custom-header>
 
       <!--PRODUCTOS-->
       <div class="container products">
-        <h2 class="display-5 text-center">PROMOCIONES</h2>
+        <h2 class="display-5 text-center">BOLICHES</h2>
 
-        <div class="row products">
-          <div class="card" style="width: 18rem;">
-            <img src="img/bebida-1.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bebida 1</h5>
-              <p class="card-text">Esta es la bebida 1</p>
-              <a href="#" class="btn btn-primary">Agregar al carro</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="img/bebida-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bebida 2</h5>
-              <p class="card-text">Esta es la bebida 2</p>
-              <a href="#" class="btn btn-primary">Agregar al carro</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="img/bebida-3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bebida 3</h5>
-              <p class="card-text">Esta es la bebida 3</p>
-              <a href="#" class="btn btn-primary">Agregar al carro</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="img/bebida-4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bebida 4</h5>
-              <p class="card-text">Esta es la bebida 4</p>
-              <a href="#" class="btn btn-primary">Agregar al carro</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="img/bebida-5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bebida 5</h5>
-              <p class="card-text">Esta es la bebida 5</p>
-              <a href="#" class="btn btn-primary">Agregar al carro</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="img/bebida-6.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bebida 6</h5>
-              <p class="card-text">Esta es la bebida 6</p>
-              <a href="#" class="btn btn-primary">Agregar al carro</a>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!--FOOTER-->
-      <footer>
-        <div class="container-fluid bg-dark row contact">
-          <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
-            <h5>MENDOZA</h5>
-            <p >
-              2215 John Daniel Drive <br>
-              Clark, MO 65243
-            </p>
-          </div>
-          <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
-            <h5>SEGUÍNOS EN NUETRAS REDES SOCIALES</h5>
-            <div class="d-flex .flex-wrap justify-content-center">
-              <a href="#">
-                <ion-icon name="logo-facebook" size="large"></ion-icon>
-              </a>
-              <a href="#">
-                <ion-icon name="logo-googleplus" size="large"></ion-icon>
-              </a>
-              <a href="#">
-                <ion-icon name="logo-twitter" size="large"></ion-icon>
-              </a>
-              <a href="#">
-                <ion-icon name="logo-linkedin" size="large"></ion-icon>
-              </a>
-              <a href="#">
-                <ion-icon name="basketball" size="large"></ion-icon>
-              </a>
-            </div>
-          </div>
-          <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
-            <h5>ABOUT PREVIA</h5>
-            <p >
-              Freelance is a free and opensource
-              landing page theme created to
-              <span style="color: #18BC9C">your free personal use</span>.
-            </p>
-          </div>
-        </div>
+      <custom-footer>
 
-        <div class="container-fluid bg-dark copyright">
-          <p >
-            Copyright Your Website 2019
-          </p>
-        </div>
-      </footer>
-      <!--END FOOTER-->
+      </custom-footer>
 
     </div>
   </body>

@@ -19,4 +19,4 @@ $(document).ready(function(){
         return matcher.test($(this).find('.card-title').text())
     }).hide();
   })
-})
+});

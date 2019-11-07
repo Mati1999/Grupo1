@@ -83,6 +83,12 @@ footer .copyright {
   height: 50px;
 }
 
+/*PRODUCTOS DESTACADOS------------------*/
+.productos-destacados button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /*PRODUCTS------------------*/
 .section-products {
   margin-bottom: 20px;
