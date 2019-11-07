@@ -8,30 +8,40 @@ class CustomHeader extends HTMLElement {
     this.innerHTML = `
     <header class="main-header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">ICON</a>
+        <img src="../img/favicon.png" style="width: 32px; height:32px;" alt="">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="products.html">PRODUCTOS </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PRODUCTOS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="products.html">Bebidas</a>
+                <a class="dropdown-item" href="boliches.html">Boliches</a>
+                <a class="dropdown-item" href="promociones.html">Promociones</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="boliches.html">BOLICHES </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                CONTACTO
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="preg_frequentes.html">Preguntas Frecuentes</a>
+                <a class="dropdown-item" href="contact_us.html">Contactános</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="promociones.html">PROMOCIONES </a>
-            </li>
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="login.html">LOGIN </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registrate.html">REGISTRATE </a>
             </li>
           </ul>
         </div>
