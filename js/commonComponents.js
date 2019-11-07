@@ -28,7 +28,7 @@ class CustomHeader extends HTMLElement {
               <a class="nav-link" href="promociones.html">PROMOCIONES </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html">LOGIN </a>
+              <a class="nav-link" href="login.html" data-toggle="modal" data-target="#loginyrg">LOGIN </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="registrate.html">REGISTRATE </a>
