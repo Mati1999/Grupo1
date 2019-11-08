@@ -32,7 +32,7 @@ class CustomHeader extends HTMLElement {
                 CONTACTO
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="preg_frequentes.html">Preguntas Frecuentes</a>
+                <a class="dropdown-item" href="preg_frecuentes.html">Preguntas Frecuentes</a>
                 <a class="dropdown-item" href="contact_us.html">Contactános</a>
             </li>
           </ul>
@@ -48,7 +48,7 @@ class CustomHeader extends HTMLElement {
       </nav>
     </header>
 
-    <!-- Modal -->
+    <!-- LOGIN AND SIGNUP -->
     <div class="modal fade" id="loginyrg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-body">
 
@@ -123,10 +123,9 @@ class CustomHeader extends HTMLElement {
                   </div>
           </div>
     </div>
-    <!-- FINAL DEL MODAL -->
-
 
     `
+
   }
 };
 
