@@ -6,9 +6,9 @@ class CustomHeader extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <header class="main-header">
+    <header class="common-header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="../img/favicon.png" style="width: 32px; height:32px;" alt="">
+        <ion-icon name="beer" size="large" style="color:gray;"></ion-icon>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,13 +38,21 @@ class CustomHeader extends HTMLElement {
           </ul>
         </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-collapse navbar-user">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="modal" data-target="#loginyrg">LOGIN </a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#">
+                  <ion-icon name="cart" size="large"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginyrg">
+                  <ion-icon name="person" size="large"></ion-icon>
+                </a>
+              </li>
           </ul>
         </div>
+
       </nav>
     </header>
 

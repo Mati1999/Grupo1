@@ -18,8 +18,14 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 /*HEADER---------------------*/
-header {
+.common-header .nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
+.common-header .navbar-user ul {
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 
