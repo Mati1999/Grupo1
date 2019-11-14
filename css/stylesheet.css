@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, h6  {
   justify-content: flex-end;
 }
 
-
 /*WELCOME-----------------------*/
 .welcome {
   display: flex;
@@ -135,10 +134,10 @@ html.pushbar_locked{
     touch-action: none;
 }
 
-
 .pushbar_locked .pushbar_main_content.pushbar_blur{
 	filter:blur(15px);
 }
+
 .pushbar{
 	z-index: 1000;
 	position: fixed;
@@ -148,6 +147,7 @@ html.pushbar_locked{
 	will-change: transform;
 	background:#fff;
 }
+
 .pushbar_overlay{
 	z-index: -999;
 	position: fixed;
@@ -163,12 +163,12 @@ html.pushbar_locked{
     will-change: opacity;
 	background: #3c3442;
 }
+
 html.pushbar_locked .pushbar_overlay{
 	opacity:0.8;
 	z-index: 999;
     transition:opacity 0.5s ease;
 }
-
 
 .pushbar.from_left{
 	top: 0;
@@ -198,6 +198,7 @@ html.pushbar_locked .pushbar_overlay{
 	min-height: 150px;
 	transform: translateZ(0) translateY(-100%);
 }
+
 .pushbar.from_bottom{
 	bottom: 0;
 	left: 0;
@@ -237,4 +238,33 @@ html.pushbar_locked .pushbar_overlay{
   .pushbar.from_right{
   	width: 40vw;
   }
+}
+
+/*PREGUNTAS FRECUENTES------------*/
+.titulo2.text-center.p-5{
+  font-family: 'Montserrat';
+}
+
+.card-body{
+    font-family: 'Montserrat';
+}
+.card-header{
+  padding: 0px !important;
+}
+
+.btn.btn-link.collapsed{
+
+  font-family: 'Montserrat';
+  text-decoration: none;
+  color: white;
+  background-color: black;
+
+}
+.mb-0{
+  color: white;
+  background-color: black;
+}
+
+.text-center.header{
+  font-family: 'Montserrat';
 }
