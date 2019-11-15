@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6  {
   background-position: center center;
 }
 
-.welcome h1, h5 {
+.welcome h1, .welcome h5 {
   color: white;
 }
 
@@ -124,14 +124,28 @@ footer .copyright {
 }
 
 /*CARRITO-------------------*/
+.lista-carrito {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.lista-carrito .card {
+  margin-bottom: 10px;
+}
+
 .pushbar.opened{
-display: block;
+  display: block;
+}
+
+.tituloCarrito {
+  text-align: center;
+  padding: 10px;
 }
 
 html.pushbar_locked{
-    overflow: hidden;
-    -ms-touch-action: none;
-    touch-action: none;
+  overflow: hidden;
+  -ms-touch-action: none;
+  touch-action: none;
 }
 
 .pushbar_locked .pushbar_main_content.pushbar_blur{
