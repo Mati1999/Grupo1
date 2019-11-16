@@ -1,5 +1,14 @@
 $( window ).on( "load", function() {
 
+  //COMMON HEADER
+  $(window).scroll(function(){
+    if ($('.common-header').offset().top > 56) {
+      $('.common-header').addClass('solid');
+    } else {
+      $('.common-header').removeClass('solid');
+    }
+  });
+
   //SEARCH AND FILTER
   $(document).ready(function(){
     var $btns = $(document).on("click", ".filters li a", function(){
@@ -146,12 +155,17 @@ $( window ).on( "load", function() {
     overlay:true
   });
 
+  //CALCULAR ITEMS COUNT
+  function calcularItemCunt() {
+    var count = document.querySelectorAll('.lista-carrito .card').length;
+    document.querySelector('.item-count').innerHTML = count;
+  }
+
   //QUITAR PRODUCTO DEL CARRITO
   function quitarProducto() {
 
     var listaCarrito = document.querySelector('.lista-carrito');
     var removeProductButtons = document.querySelectorAll('.lista-carrito .card .agregar');
-
 
     for (var i=0; i < removeProductButtons.length; i++) {
 
@@ -163,21 +177,18 @@ $( window ).on( "load", function() {
         console.log(this);
         console.log(this.closest('.card'));
         listaCarrito.removeChild(this.closest('.card'));
-
+        calcularItemCunt();
       });
     };
   };
 
   //SUSCRIBE BOTONES AL EVENTO ADD
-
   var addProductButtons = document.querySelectorAll('.card .agregar');
 
   for (var i = 0; i < addProductButtons.length; i++) {
 
     addProductButtons[i].addEventListener('click', function() {
-
       item = this.closest('.card');
-
       var cartItem = item.cloneNode(true);
 
       //Agregar Item al carrito
@@ -185,6 +196,7 @@ $( window ).on( "load", function() {
       this.innerHTML = "Agregado";
       this.classList.add('disabled');
 
+      calcularItemCunt();
       quitarProducto();
 
     });

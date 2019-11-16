@@ -10,7 +10,7 @@ class CustomHeader extends HTMLElement {
       <nav class="navbar navbar-expand-lg ">
         <ion-icon name="beer" size="large" style="color:white;"></ion-icon>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <ion-icon name="funnel" size="large" style="color:white"></ion-icon>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,16 +40,17 @@ class CustomHeader extends HTMLElement {
 
         <div class="navbar-collapse navbar-user">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-pushbar-target="pushbar-carrito">
-                  <ion-icon name="cart" size="large"></ion-icon>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginyrg">
-                  <ion-icon name="person" size="large"></ion-icon>
-                </a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link bubble" href="#" data-toggle="modal" data-target="#loginyrg">
+                <ion-icon name="person" size="large"></ion-icon>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bubble" href="#" data-pushbar-target="pushbar-carrito">
+                <ion-icon name="cart" size="large"></ion-icon>
+              </a>
+              <p class="item-count bubble">0</p>
+            </li>
           </ul>
         </div>
 
