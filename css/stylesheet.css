@@ -1,6 +1,7 @@
 /*COMMON--------------------*/
 body {
   font-family: 'Lato', sans-serif !important;
+  background-color: #ffabab !important;
 }
 
 h1, h2, h3, h4, h5, h6  {
@@ -18,9 +19,20 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 /*HEADER---------------------*/
+.common-header {
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
+}
+
+.common-header .dropdown-menu {
+  background-color: black;
+}
+
 .common-header .nav-item {
   margin-left: 10px;
   margin-right: 10px;
+
 }
 
 .common-header .navbar-user ul {
@@ -28,8 +40,14 @@ h1, h2, h3, h4, h5, h6  {
   justify-content: flex-end;
 }
 
+.common-header a {
+  color: white;
+  font-weight: bold;
+}
+
 /*WELCOME-----------------------*/
 .welcome {
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,13 +56,20 @@ h1, h2, h3, h4, h5, h6  {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  margin-bottom: 30px;
+  background-color: #d4e4ff;
 }
 
 .welcome h1, .welcome h5 {
   color: white;
+  font-family: 'Fredoka One' !important;
 }
 
 /*ABOUT-----------------------*/
+.about-us {
+  background-color: #ffabab;
+}
+
 .about-us, .about-us div p {
   color: black;
 }
@@ -60,6 +85,7 @@ footer .contact {
   padding-top: 15px;
   padding-bottom: 15px;
   border: none;
+  background-color: #02004C;
 }
 
 footer .contact h5 {
@@ -86,9 +112,35 @@ footer .copyright {
   align-items: center;
   color: white;
   height: 50px;
+  background-color: #02004C;
+}
+
+/*CONTENIDO CONTAINERS------------------*/
+.contenido-home {
+  position: absolute;
+  top: 100vh;
+}
+
+.contenido-productos {
+  position: absolute;
+  top: 70px;
+}
+
+.contenido-boliches {
+  position: absolute;
+  top: 70px;
+}
+
+.contenido-promociones {
+  position: absolute;
+  top: 70px;
 }
 
 /*PRODUCTOS DESTACADOS------------------*/
+.productos-destacados {
+  background-color: #ffabab;
+}
+
 .productos-destacados button {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -180,8 +232,8 @@ html.pushbar_locked{
 
 html.pushbar_locked .pushbar_overlay{
 	opacity:0.8;
-	z-index: 999;
-    transition:opacity 0.5s ease;
+	z-index: 0;
+  transition:opacity 0.5s ease;
 }
 
 .pushbar.from_left{
@@ -195,6 +247,7 @@ html.pushbar_locked .pushbar_overlay{
 }
 
 .pushbar.from_right{
+  background-color: #e8e8e8;
 	top: 0;
 	right: 0;
   padding: 15px;

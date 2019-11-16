@@ -194,4 +194,7 @@ $( window ).on( "load", function() {
 /*TO DO -----------------------------------------
 1- Agregar la burbuja con la cantidad de items en el cart.
 2- Habilitar en la lista de productos cuando se quita un elemento.
+3- Poner cards en el carrousel para que se vean mas chiquitos
+
+4- README
 */

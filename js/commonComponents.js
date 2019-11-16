@@ -7,8 +7,8 @@ class CustomHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <header class="common-header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <ion-icon name="beer" size="large" style="color:gray;"></ion-icon>
+      <nav class="navbar navbar-expand-lg ">
+        <ion-icon name="beer" size="large" style="color:white;"></ion-icon>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -169,15 +169,14 @@ class CustomFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <footer>
-      <div class="container-fluid bg-dark row contact">
-        <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
+      <div class="container-fluid row contact">
+        <div class="container-fluid col-12 col-md-6 col-lg-6 d-flex flex-column contact">
           <h5>MENDOZA</h5>
           <p >
-            2215 John Daniel Drive <br>
-            Clark, MO 65243
+            Argentina
           </p>
         </div>
-        <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
+        <div class="container-fluid col-12 col-md-6 col-lg-6 d-flex flex-column contact">
           <h5>SEGUÍNOS EN NUETRAS REDES SOCIALES</h5>
           <div class="d-flex .flex-wrap justify-content-center">
             <a href="#">
@@ -197,17 +196,9 @@ class CustomFooter extends HTMLElement {
             </a>
           </div>
         </div>
-        <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
-          <h5>ABOUT PREVIA</h5>
-          <p >
-            Freelance is a free and opensource
-            landing page theme created to
-            <span style="color: #18BC9C">your free personal use</span>.
-          </p>
-        </div>
       </div>
 
-      <div class="container-fluid bg-dark copyright">
+      <div class="container-fluid copyright">
         <p >
           Copyright Your Website 2019
         </p>
