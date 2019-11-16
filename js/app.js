@@ -149,59 +149,49 @@ $( window ).on( "load", function() {
   //QUITAR PRODUCTO DEL CARRITO
   function quitarProducto() {
 
-    var removeProductButtons = document.querySelectorAll('.card .quitar');
+    var listaCarrito = document.querySelector('.lista-carrito');
+    var removeProductButtons = document.querySelectorAll('.lista-carrito .card .agregar');
+
+
     for (var i=0; i < removeProductButtons.length; i++) {
 
+      removeProductButtons[i].innerHTML = "Quitar"
+      removeProductButtons[i].classList.remove("agregar");
+      removeProductButtons[i].classList.add("quitar");
+
       removeProductButtons[i].addEventListener('click', function(){
+        console.log(this);
+        console.log(this.closest('.card'));
+        listaCarrito.removeChild(this.closest('.card'));
 
-        //Crear Item
-        item = this.closest('.card');
-        this.innerHTML = "Agregar al carrito"
-        this.classList.remove("quitar");
-        this.classList.add("agregar");
-
-        //Agregar Item a la grilla
-        document.getElementById('grid').appendChild(item);
-
-
-
-
-
-
-        agregarProducto();
       });
     };
   };
 
-  //AGREGAR PRODUCTO AL CARRITO
-  function agregarProducto() {
+  //SUSCRIBE BOTONES AL EVENTO ADD
 
-    var addProductButtons = document.querySelectorAll('.card .agregar');
-    for (var i = 0; i < addProductButtons.length; i++) {
+  var addProductButtons = document.querySelectorAll('.card .agregar');
 
-      addProductButtons[i].addEventListener('click', function(){
+  for (var i = 0; i < addProductButtons.length; i++) {
 
-        //Crear Item
-        item = this.closest('.card');
-        this.innerHTML = "Quitar"
-        this.classList.remove("agregar");
-        this.classList.add("quitar");
+    addProductButtons[i].addEventListener('click', function() {
 
-        //Agregar Item al carrito
-        document.getElementById('lista-carrito').appendChild(item);
+      item = this.closest('.card');
 
-        quitarProducto();
-      });
-    };
+      var cartItem = item.cloneNode(true);
+
+      //Agregar Item al carrito
+      document.getElementById('lista-carrito').appendChild(cartItem);
+      this.innerHTML = "Agregado";
+      this.classList.add('disabled');
+
+      quitarProducto();
+
+    });
   };
-
-  agregarProducto();
-
 });
 
 /*TO DO -----------------------------------------
-1- Leer de la base de datos y agregar cada card.
-2- Cada card debe tener un boton "Agregar al carro" y el "id"
-3- Cada boton tiene que implementar la clase "agregar-producto"
-4- Cada boton se tiene que suscribir al evento para agregar productos
+1- Agregar la burbuja con la cantidad de items en el cart.
+2- Habilitar en la lista de productos cuando se quita un elemento.
 */
