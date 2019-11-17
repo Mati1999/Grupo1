@@ -1,20 +1,22 @@
-# Grupo1
+# HOY SE SALE!
 
-# CLONAR UN REPOSITORIO: git clone {url del repo}
-Esto se hace solo una vez.
+Siempre hay inconvenientes para organizar una salida con amigos, “¿quién compra qué?”, “llego tarde”, “no puedo hacer las compras”, “a donde vamos?”, son algunos de los más comunes. 
 
-# CAMBIAR DE BRANCH: git checkout {nombre del branch al que queremos ir}
-Esto es para movernos a un branch cualquiera, por ejemplo si queremos ir al branch master, tenemos que poner “git checkout master”
+Hoy Se Sale!, les va a facilitar la organización. Los usuarios de este sitio podrán comprar bebidas, entradas a boliches y también paquetes y promociones de ambas, todo online. 
+Por otro lado, los boliches podrán promocionar sus lugares.
 
-# ACTUALIZAR UN BRANCH: git pull
-Primero hay que pararse en el branch que queremos con “git checkout {nombre del branch}” y una vez que estamos parados ahi corremos “git pull” para descargar los ultimos cambios.
+# Funciones básicas:
 
-# CREAR UN BRANCH NUEVO: git branch {nombre del branch} origin master
-esto significa que vamos a crear un branch con el nombre que elegimos y va a tener el codigo que tiene master al momento de crear el branch
+Clientes: 
+- Registrarse y Loguearse.
+- Comprar productos.
+- Historial de compras.
 
-# SUBIR LOS CAMBIOS AL REPOSITORIO LOCAL
-1- si tenemos archivos nuevos, primero tenemos que subir los archivos con “git add {nombre del archivo}”
-2- git commit -m {mensaje descriptivo de los cambios}
+Administrador:
+- Ver Pedidos.
+- Agregar productos.
+- Agregar categorias.
 
-# SUBIR LOS CAMBIOS AL REPOSITORIO REMOTO
-git push
+Productos:
+- Control de stock.
+- Productos por categorias.
