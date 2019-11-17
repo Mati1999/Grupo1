@@ -155,6 +155,8 @@ $( window ).on( "load", function() {
     overlay:true
   });
 
+  var items = [];
+
   //CALCULAR ITEMS COUNT
   function calcularItemCunt() {
     var count = document.querySelectorAll('.lista-carrito .card').length;
@@ -204,9 +206,9 @@ $( window ).on( "load", function() {
 });
 
 /*TO DO -----------------------------------------
-1- Agregar la burbuja con la cantidad de items en el cart.
-2- Habilitar en la lista de productos cuando se quita un elemento.
-3- Poner cards en el carrousel para que se vean mas chiquitos
 
-4- README
+1- Habilitar en la lista de productos cuando se quita un elemento.
+2- Arreglar el carousel del home
+3- alinear iconos en los bubble
+
 */
