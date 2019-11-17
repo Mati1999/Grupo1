@@ -81,7 +81,6 @@ class CustomHeader extends HTMLElement {
     <!-- LOGIN AND SIGNUP -->
     <div class="modal fade" id="loginyrg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-body">
-
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -91,8 +90,8 @@ class CustomHeader extends HTMLElement {
               </ul>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             </div>
-            <div class="modal-body tab-content py-4">
                <!-- LOGIN -->
+            <div class="modal-body tab-content">
               <form class="needs-validation tab-pane fade active show" autocomplete="off" novalidate="" id="signin-tab">
                 <div class="form-group">
                   <label for="si-email">Correo electrónico</label>
@@ -118,10 +117,22 @@ class CustomHeader extends HTMLElement {
               </form>
                <!-- SIGNUP -->
               <form class="needs-validation tab-pane fade" autocomplete="off" novalidate="" id="signup-tab">
+              <div class="form-row">
+                <div class="form-group col-lg-6 col-12 pr-0 pl-0">
+                  <label for="su-name">Nombre</label>
+                  <input class="form-control" type="text" id="su-name" placeholder="Nombre" required="">
+                  <div class="invalid-feedback">Porfavor, ingrese su nombre.</div>
+                </div>
+                <div class="form-group col-lg-6 col-12 pr-0">
+                  <label for="su-last_name">Apellido</label>
+                  <input class="form-control" type="text" id="su-name" placeholder="Apellido" required="">
+                  <div class="invalid-feedback">Porfavor, ingrese su apellido.</div>
+                </div>
+                </div>
                 <div class="form-group">
-                  <label for="su-name">Nombre completo</label>
-                  <input class="form-control" type="text" id="su-name" placeholder="Nombre y Apellido" required="">
-                  <div class="invalid-feedback">Porfavor, ingrese su nombre completo.</div>
+                  <label for="su-email">Fecha de nacimiento</label>
+                  <input class="form-control" type="email" id="su-email" placeholder="AAAA/MM/DD" required="">
+                  <div class="invalid-feedback">Porfavor, ingrese una fecha válida.</div>
                 </div>
                 <div class="form-group">
                   <label for="su-email">Correo electrónico</label>
@@ -132,25 +143,44 @@ class CustomHeader extends HTMLElement {
                   <label for="su-password">Contraseña</label>
                   <div class="password-toggle">
                     <input class="form-control" type="password" id="su-password" required="" placeholder="********">
-                    <label class="password-toggle-btn">
+                    <!-- <label class="password-toggle-btn">
                       <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                    </label>
+                    </label> -->
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="su-password-confirm">Confirmar contraseña</label>
                   <div class="password-toggle">
                     <input class="form-control" type="password" id="su-password-confirm" required="" placeholder="********">
-                    <label class="password-toggle-btn">
+                    <!-- <label class="password-toggle-btn">
                       <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                    </label>
+                    </label> -->
                   </div>
+                </div>
+                <div class="form-row">
+                <div class="form-group col-lg-4 col-12 pl-2">
+                  <label for="su-name">País</label>
+                  <input class="form-control" type="text" id="su-name" placeholder="País" required="">
+                </div>
+                <div class="form-group col-lg-4 col-12 pl-2">
+                  <label for="su-name">Ciudad</label>
+                  <input class="form-control" type="text" id="su-name" placeholder="Ciudad" required="">
+                </div>
+                <div class="form-group col-lg-4 col-12 pl-2">
+                  <label for="su-name">Provincia</label>
+                  <input class="form-control" type="text" id="su-name" placeholder="Provincia" required="">
+                </div>
+                </div>
+                <div class="form-group pl-2">
+                  <label for="su-name">Direccion</label>
+                  <input class="form-control" type="text" id="su-name" placeholder="Direccion" required="">
+                  <div class="invalid-feedback">Porfavor, ingrese una dirección válida.</div>
                 </div>
                 <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign up</button>
               </form>
-            </div>
           </div>
         </div>
+       </div>
       </div>
     </div>
 
@@ -171,29 +201,42 @@ class CustomFooter extends HTMLElement {
     this.innerHTML = `
     <footer>
       <div class="container-fluid row contact">
-        <div class="container-fluid col-12 col-md-6 col-lg-6 d-flex flex-column contact">
-          <h5>MENDOZA</h5>
+        <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
+          <h5>ARGENTINA</h5>
           <p >
-            Argentina
+            Av. Arístides Villanueva 711, Mendoza.
           </p>
         </div>
-        <div class="container-fluid col-12 col-md-6 col-lg-6 d-flex flex-column contact">
+        <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
+        <h5>
+        Descargá la APP móvil
+        </h5>
+        <div class="d-flex .flex-wrap justify-content-center">
+
+        <a href="#">
+        <img class="pl-2" width=150px height=35px src="../img/google-play.png" alt="">
+        </a>
+
+        <a href="#">
+        <img class="pl-2" width=150px height=35px src="../img/app-store.png" alt="">
+        </a>
+
+        </div>
+        </div>
+        <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
           <h5>SEGUÍNOS EN NUETRAS REDES SOCIALES</h5>
           <div class="d-flex .flex-wrap justify-content-center">
             <a href="#">
               <ion-icon name="logo-facebook" size="large"></ion-icon>
             </a>
             <a href="#">
-              <ion-icon name="logo-googleplus" size="large"></ion-icon>
-            </a>
+              <ion-icon name="logo-instagram" size="large"></ion-icon>
+              </a>
             <a href="#">
               <ion-icon name="logo-twitter" size="large"></ion-icon>
             </a>
             <a href="#">
               <ion-icon name="logo-linkedin" size="large"></ion-icon>
-            </a>
-            <a href="#">
-              <ion-icon name="basketball" size="large"></ion-icon>
             </a>
           </div>
         </div>
@@ -201,7 +244,7 @@ class CustomFooter extends HTMLElement {
 
       <div class="container-fluid copyright">
         <p >
-          Copyright Your Website 2019
+          Copyright Hoy Se Sale 2019
         </p>
       </div>
     </footer>
