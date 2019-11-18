@@ -59,7 +59,7 @@ class CustomHeader extends HTMLElement {
       <!-- CONTENIDO DE PUSHBAR CARRITO ----------------------------------------------->
       <div data-pushbar-id="pushbar-carrito" class="pushbar from_right pushbar-carrito">
         <div class="btn-cerrar derecha">
-          <button data-pushbar-close> <ion-icon name="close"></ion-icon></button>
+          <button class="btn btn-outline-dark" style="border-radius: 10px;" data-pushbar-close> <ion-icon name="close"></ion-icon></button>
         </div>
 
         <h4 class="tituloCarrito">Carrito de Compras</h4>
