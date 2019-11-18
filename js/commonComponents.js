@@ -152,9 +152,6 @@ class CustomHeader extends HTMLElement {
                   <label for="su-password-confirm">Confirmar contraseña</label>
                   <div class="password-toggle">
                     <input class="form-control" type="password" id="su-password-confirm" required="" placeholder="********">
-                    <!-- <label class="password-toggle-btn">
-                      <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                    </label> -->
                   </div>
                 </div>
                 <div class="form-row">
@@ -171,7 +168,7 @@ class CustomHeader extends HTMLElement {
                   <input class="form-control" type="text" id="su-name" placeholder="Provincia" required="">
                 </div>
                 </div>
-                <div class="form-group pl-2">
+                <div class="form-group col-lg-12 col-12">
                   <label for="su-name">Direccion</label>
                   <input class="form-control" type="text" id="su-name" placeholder="Direccion" required="">
                   <div class="invalid-feedback">Porfavor, ingrese una dirección válida.</div>
@@ -214,11 +211,11 @@ class CustomFooter extends HTMLElement {
         <div class="d-flex .flex-wrap justify-content-center">
 
         <a href="#">
-        <img class="pl-2" width=150px height=35px src="../img/google-play.png" alt="">
+        <img class="pl-2" width=150px height=45px src="../img/google-play.png" alt="">
         </a>
 
         <a href="#">
-        <img class="pl-2" width=150px height=35px src="../img/app-store.png" alt="">
+        <img class="pl-2" width=150px height=45px src="../img/app-store.png" alt="">
         </a>
 
         </div>
@@ -226,16 +223,16 @@ class CustomFooter extends HTMLElement {
         <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
           <h5>SEGUÍNOS EN NUETRAS REDES SOCIALES</h5>
           <div class="d-flex .flex-wrap justify-content-center">
-            <a href="#">
+            <a href="https://www.facebook.com/Hoy-Se-Sale-103355724469349/?modal=admin_todo_tour">
               <ion-icon name="logo-facebook" size="large"></ion-icon>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/hoysesale1.9/?hl=es-la">
               <ion-icon name="logo-instagram" size="large"></ion-icon>
               </a>
-            <a href="#">
+            <a href="https://twitter.com/HoySeSale3">
               <ion-icon name="logo-twitter" size="large"></ion-icon>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/hoy-sesale-35b45b198/">
               <ion-icon name="logo-linkedin" size="large"></ion-icon>
             </a>
           </div>
