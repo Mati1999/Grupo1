@@ -33,7 +33,7 @@ class CustomHeader extends HTMLElement {
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="preg_frecuentes.html">Preguntas Frecuentes</a>
-                <a class="dropdown-item" href="contact_us.html">Contactános</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#contacto">Contactános</a>
             </li>
           </ul>
         </div>
@@ -86,7 +86,7 @@ class CustomHeader extends HTMLElement {
             <div class="modal-header">
               <ul class="nav nav-tabs card-header-tabs" role="tablist">
                 <li class="nav-item"><a class="nav-link active" href="#signin-tab" data-toggle="tab" role="tab" aria-selected="false"><i class="czi-unlocked mr-2 mt-n1"></i>Log in</a></li>
-                <li class="nav-item"><a class="nav-link" href="#signup-tab" data-toggle="tab" role="tab" aria-selected="true"><i class="czi-user mr-2 mt-n1"></i>Sign up</a></li>
+                <li class="nav-item"><a class="nav-link" href="#signup-tab" data-toggle="tab" role="tab" aria-selected="true"><i class="czi-user mr-2 mt-n1"></i>Registráte</a></li>
               </ul>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             </div>
@@ -113,7 +113,9 @@ class CustomHeader extends HTMLElement {
                     <label class="custom-control-label" for="si-remember">Recordarme</label>
                   </div><a class="font-size-sm" href="#">Olvidaste tu contraseña?</a>
                 </div>
-                <button class="btn btn-primary btn-block btn-shadow" type="submit">Log in</button>
+                <div class="text-center p-2">
+                  <button class="btn btn-outline-dark btn-lg" type="submit">Log in</button>
+                </div>
               </form>
                <!-- SIGNUP -->
               <form class="needs-validation tab-pane fade" autocomplete="off" novalidate="" id="signup-tab">
@@ -176,11 +178,55 @@ class CustomHeader extends HTMLElement {
                   <input class="form-control" type="text" id="su-name" placeholder="Direccion" required="">
                   <div class="invalid-feedback">Porfavor, ingrese una dirección válida.</div>
                 </div>
-                <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign up</button>
+                <div class="text-center p-2">
+                  <button class="btn btn-outline-dark btn-lg" type="submit">Registráte</button>
+                </div>
               </form>
           </div>
         </div>
        </div>
+      </div>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-body">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5>Envianos tu pregunta</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+               <!-- LOGIN -->
+            <div class="modal-body tab-content">
+              <form class="needs-validation tab-pane fade active show" autocomplete="off" novalidate="" id="signin-tab">
+                <div class="form-groupalign-center ">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                  <div class="m-auto">
+                      <input id="name" name="name" type="text" placeholder="Nombre" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group align-center ">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                  <div class="m-auto">
+                      <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group align-center ">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                  <div class="m-auto">
+                      <textarea class="form-control" id="message" name="message" placeholder="Dejanos tu pregunta y te responderemos en breve." rows="7"></textarea>
+                  </div>
+                </div>
+                <div class="form-group align-center ">
+                  <div class="text-center p-2">
+                      <button type="submit" class="btn btn-outline-dark btn-lg">ENVIAR</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

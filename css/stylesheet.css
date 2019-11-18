@@ -1,7 +1,7 @@
 /*COMMON--------------------*/
 body {
-  font-family: 'Lato', sans-serif !important;
-  background-color: #ffabab !important;
+  font-family: 'Montserrat', !important;
+  background-color: #e788b3 !important;
 }
 
 h1, h2, h3, h4, h5, h6  {
@@ -14,6 +14,8 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 .title {
+  color: white;
+  font-family: 'Fredoka One' !important;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -112,11 +114,11 @@ h1, h2, h3, h4, h5, h6  {
 
 /*ABOUT-----------------------*/
 .about-us {
-  background-color: #ffabab;
+  background-color: #e788b3;
 }
 
 .about-us, .about-us div p {
-  color: black;
+  color: white;
 }
 
 /*FOOTER---------------------*/
@@ -185,7 +187,12 @@ footer .copyright {
 
 .productos-destacados button {
   margin-top: 20px;
-  margin-bottom: 20px;
+}
+
+/*PROMOCION-----------------*/
+.promocion {
+  background-color: #23245D;
+  color: white;
 }
 
 /*PRODUCTS------------------*/
@@ -350,30 +357,18 @@ html.pushbar_locked .pushbar_overlay{
 }
 
 /*PREGUNTAS FRECUENTES------------*/
-.titulo2.text-center.p-5{
-  font-family: 'Montserrat';
-}
-
-.card-body{
-    font-family: 'Montserrat';
-}
 .card-header{
   padding: 0px !important;
 }
 
 .btn.btn-link.collapsed{
-
   font-family: 'Montserrat';
   text-decoration: none;
   color: white;
   background-color: black;
-
 }
+
 .mb-0{
   color: white;
   background-color: black;
-}
-
-.text-center.header{
-  font-family: 'Montserrat';
 }
