@@ -92,66 +92,40 @@
         <div class="container-fluid productos-destacados p-5">
           <h2 class="display-5 text-center title">PRODUCTOS DESTACADOS</h2>
 
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active d-flex row justify-content-around">
-                <div id="0" class="card grid-item vinos" style="width: 18rem;">
-                  <img src="../img/bebida-1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Bebida 1</h5>
-                    <p class="card-text">Esta es la bebida 1</p>
-                    <p>Precio: $100</p>
-                  </div>
-                </div>
-                <div id="1" class="card grid-item vinos" style="width: 18rem;">
-                  <img src="../img/bebida-2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Bebida 2</h5>
-                    <p class="card-text">Esta es la bebida 2</p>
-                    <p>Precio: $100</p>
-                  </div>
-                </div>
-                <div id="2" class="card grid-item gaseosas" style="width: 18rem;">
-                  <img src="../img/bebida-3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Bebida 3</h5>
-                    <p class="card-text">Esta es la bebida 3</p>
-                    <p>Precio: $100</p>
-                  </div>
-                </div>
+          <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner col-12 col-md-12 col-lg-6">
+              <div class="carousel-item active">
+                <img src="../img/bebida-1.jpg" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item d-flex row justify-content-around">
-                <div id="3" class="card grid-item gaseosas" style="width: 18rem;">
-                  <img src="../img/bebida-4.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Bebida 4</h5>
-                    <p class="card-text">Esta es la bebida 4</p>
-                    <p>Precio: $100</p>
-                  </div>
-                </div>
-                <div id="4" class="card grid-item aperitivos" style="width: 18rem;">
-                  <img src="../img/bebida-5.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Bebida 5</h5>
-                    <p class="card-text">Esta es la bebida 5</p>
-                    <p>Precio: $100</p>
-                  </div>
-                </div>
-                <div id="5" class="card grid-item aperitivos" style="width: 18rem;">
-                  <img src="../img/bebida-6.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Bebida 6</h5>
-                    <p class="card-text">Esta es la bebida 6</p>
-                    <p>Precio: $100</p>
-                  </div>
-                </div>
+              <div class="carousel-item">
+                <img src="../img/bebida-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/bebida-3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/bebida-4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/bebida-5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/bebida-6.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
@@ -163,6 +137,7 @@
 
             </button>
           </div>
+          
         </div>
 
         <!--FOOTER-->
