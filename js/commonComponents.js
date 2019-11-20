@@ -80,7 +80,7 @@ class CustomHeader extends HTMLElement {
 
     <!-- LOGIN AND SIGNUP -->
     <div class="modal fade" id="loginyrg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-body">
+      <div class="modal-body animated slideInDown">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -187,7 +187,7 @@ class CustomHeader extends HTMLElement {
 
     <!-- CONTACTO -->
     <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-body">
+      <div class="modal-body animated slideInDown">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">

@@ -23,13 +23,28 @@ $( window ).on( "load", function() {
       $(this).addClass('active');
     });
 
-    var $search = $(document).on("input", "#search", function(){
-      $btns.removeClass('active');
-      var matcher = new RegExp($(this).val(), 'gi');
-      $('#grid > .grid-item').show().not(function(){
-          return matcher.test($(this).find('.card-title').text())
-      }).hide();
-    })
+    var search = document.getElementById('search');
+    search.addEventListener('keyup', function() {
+      // Declare variables
+      var input, filter, grid, gridItems, title, i, txtValue;
+      input = document.getElementById('search');
+      filter = input.value.toUpperCase();
+      grid = document.getElementById('grid');
+      gridItems = grid.getElementsByClassName('grid-item');
+
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < gridItems.length; i++) {
+        title = gridItems[i].getElementsByClassName('card-title')[0];
+        txtValue = title.textContent || title.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          gridItems[i].style.display = "";
+        } else {
+          gridItems[i].style.display = "none";
+        }
+      }
+    });
+
+
   });
 
   //CARRITO-----------------------//
