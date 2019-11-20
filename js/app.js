@@ -209,6 +209,5 @@ $( window ).on( "load", function() {
 /*TO DO -----------------------------------------
 
 1- Habilitar en la lista de productos cuando se quita un elemento.
-2- Arreglar el carousel del home
 
 */
