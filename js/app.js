@@ -11,16 +11,17 @@ $( window ).on( "load", function() {
 
   //SEARCH AND FILTER
   $(document).ready(function(){
-    var $btns = $(document).on("click", ".filters li a", function(){
+    $(document).on("click", ".list-group-item", function(){
+
       if (this.id == 'todos') {
         $('#grid > .grid-item').fadeIn(500);
       } else {
         var $el = $('.' + this.id).fadeIn(500);
         $('#grid > .grid-item').not($el).hide();
       }
-      $btns.removeClass('active');
+      $(".list-group-item").removeClass('active');
       $(this).addClass('active');
-    })
+    });
 
     var $search = $(document).on("input", "#search", function(){
       $btns.removeClass('active');

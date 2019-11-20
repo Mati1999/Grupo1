@@ -168,18 +168,6 @@ footer .copyright {
   top: 100vh;
 }
 
-
-
-.contenido-boliches {
-  position: absolute;
-  top: 70px;
-}
-
-.contenido-promociones {
-  position: absolute;
-  top: 70px;
-}
-
 /*PRODUCTOS DESTACADOS------------------*/
 .productos-destacados {
   background-color: #ffabab;
@@ -196,19 +184,23 @@ footer .copyright {
 }
 
 /*PRODUCTS------------------*/
-.section-products {
-  margin-bottom: 20px;
-}
-
 .products-list {
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
 }
 
-.filters {
-  text-decoration: none;
-  list-style-type: none;
+.filters.list-group {
+  z-index: 0;
+  margin-bottom: 15px;
+}
+
+.filters.list-group input {
+  padding: 15px;
+}
+
+.section-products {
+  margin-bottom: 20px;
 }
 
 .section-products .card {
