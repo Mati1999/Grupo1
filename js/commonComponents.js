@@ -22,7 +22,7 @@ class CustomHeader extends HTMLElement {
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 PRODUCTOS
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="products.html">Bebidas</a>
                 <a class="dropdown-item" href="boliches.html">Boliches</a>
                 <a class="dropdown-item" href="promociones.html">Promociones</a>
@@ -31,7 +31,7 @@ class CustomHeader extends HTMLElement {
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 CONTACTO
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="preg_frecuentes.html">Preguntas Frecuentes</a>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#contacto">Contactános</a>
             </li>
@@ -80,7 +80,7 @@ class CustomHeader extends HTMLElement {
 
     <!-- LOGIN AND SIGNUP -->
     <div class="modal fade" id="loginyrg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-body animated slideInDown">
+      <div id="pad0" class="modal-body animated slideInDown">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -170,7 +170,7 @@ class CustomHeader extends HTMLElement {
                   <input class="form-control" type="text" id="su-name" placeholder="Provincia" required="">
                 </div>
                 </div>
-                <div class="form-group col-lg-12 col-12">
+                <div class="form-group col-lg-12 col-12 pl-0 pr-0">
                   <label for="su-name">Direccion</label>
                   <input class="form-control" type="text" id="su-name" placeholder="Direccion" required="">
                   <div class="invalid-feedback">Porfavor, ingrese una dirección válida.</div>
