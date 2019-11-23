@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6  {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 50vh;
+  height: 30vh;
   background-image: url('../img/bg-others.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 .welcome-productos h1 {
+  padding-bottom: 16px;
   color: white;
   font-family: 'Fredoka One' !important;
 }
