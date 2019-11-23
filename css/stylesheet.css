@@ -205,7 +205,12 @@ footer .copyright {
 
 .section-products .card {
   margin-bottom: 15px;
-  transition: all 2s ease;
+  transition: all 0.5s ease;
+}
+
+.section-products .card:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.90em);
 }
 
 .section-products button {
