@@ -243,53 +243,53 @@ class CustomFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <footer>
-      <div class="container-fluid row contact">
-        <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
-          <h5>ARGENTINA</h5>
-          <p >
-            Av. Arístides Villanueva 711, Mendoza.
-          </p>
-        </div>
-        <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
-        <h5>
-        Descargá la APP móvil
-        </h5>
-        <div class="d-flex .flex-wrap justify-content-center">
-
-        <a href="#">
-        <img class="pl-2" width=150px height=45px src="../img/google-play.png" alt="">
-        </a>
-
-        <a href="#">
-        <img class="pl-2" width=150px height=45px src="../img/app-store.png" alt="">
-        </a>
-
-        </div>
-        </div>
-        <div class="container-fluid col-12 col-md-4 col-lg-4 d-flex flex-column contact">
-          <h5>SEGUÍNOS EN NUETRAS REDES SOCIALES</h5>
-          <div class="d-flex .flex-wrap justify-content-center">
-            <a href="https://www.facebook.com/Hoy-Se-Sale-103355724469349/?modal=admin_todo_tour">
-              <ion-icon name="logo-facebook" size="large"></ion-icon>
-            </a>
-            <a href="https://www.instagram.com/hoysesale1.9/?hl=es-la">
-              <ion-icon name="logo-instagram" size="large"></ion-icon>
-              </a>
-            <a href="https://twitter.com/HoySeSale3">
-              <ion-icon name="logo-twitter" size="large"></ion-icon>
-            </a>
-            <a href="https://www.linkedin.com/in/hoy-sesale-35b45b198/">
-              <ion-icon name="logo-linkedin" size="large"></ion-icon>
-            </a>
+      <div class="container-fluid">
+        <div class="container text-md-left text-center col-12 col-md-12 col-lg-8 p-0">
+  ​
+          <!-- Grid row -->
+          <div class="row">
+            <!-- columna titulo -->
+            <div class="col-12 col-md-6 col-lg-6 mx-auto">
+              <h5 class="titulo mt-3 mb-4 text-center">HOY SE SALE!</h5>
+              <p class="text-center">
+                <ion-icon name="pin"></ion-icon>
+                Av. Arístides Villanueva 711, Mendoza, Argentina.
+              </p>
+            </div>
+  ​
+            <!-- Links -->
+            <div class="col-12 col-md-6 col-lg-6 mx-auto text-center">
+              <ul class="list-unstyled m-4">
+                <li>
+                  <a href="#" data-toggle="modal" data-target="#contacto">CONTACTO</a>
+                </li>
+                <li>
+                  <a href="preg_frecuentes.html">PREGUNTAS FRECUENTES</a>
+                </li>
+                <li>
+                  <a href="#about-us">SOBRE NOSOTROS</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="container-fluid copyright">
-        <p >
-          Copyright Hoy Se Sale 2019
+        </div>
+  ​
+        <!-- Redes Sociales Iconos -->
+        <p class="social-networks text-center">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter" ></ion-icon></a>
+          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
         </p>
+  ​
+        <!-- Copyright -->
+        <div class="copyright text-center p-3 col-12">© 2019 Copyright:
+          <a href="#">HOY SE SALE!</a>
+        </div>
+
       </div>
+  ​
     </footer>
     `
   }

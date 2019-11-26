@@ -125,44 +125,25 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 /*FOOTER---------------------*/
-footer .contact {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
+
+footer {
+  background-color: #05011E;
   color: white;
-  margin: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: none;
-  background-color: #02004C;
+  font-family: 'Montserrat';
 }
 
-footer .contact h5 {
-  margin-top: 15px;
-  margin-bottom: 15px;
+footer .titulo {
+  font-family: 'Fredoka One' !important;
 }
 
-footer .contact ion-icon {
-  font-size: 32px;
-  margin-left: 8px;
-  margin-right: 8px;
+footer .social-networks a {
   text-decoration: none;
   color: white;
-}
-
-footer p {
-  margin: 0px;
-  text-align: center;
+  font-size: 30px;
 }
 
 footer .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  height: 50px;
-  background-color: #02004C;
+  background-color: black;
 }
 
 /*CONTENIDO CONTAINERS------------------*/
