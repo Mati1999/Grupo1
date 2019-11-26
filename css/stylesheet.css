@@ -372,3 +372,18 @@ html.pushbar_locked .pushbar_overlay{
   color: white;
   background-color: black;
 }
+/*perfil de usuario-------------*/
+.user{
+  background-size: cover;
+  background-image: url('../img/bg-home.jpg');
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pilar1{
+  background-color: white
+}
+.quieto{
+  position: fixed;
+}
