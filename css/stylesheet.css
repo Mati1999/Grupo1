@@ -336,18 +336,15 @@ html.pushbar_locked .pushbar_overlay{
 }
 
 /*PREGUNTAS FRECUENTES------------*/
-.card-header{
+.faq .card-header{
   padding: 0px !important;
 }
 
-.btn.btn-link.collapsed{
-  font-family: 'Montserrat';
-  text-decoration: none;
-  color: white;
-  background-color: black;
+.faq h5 {
+  background-color: #e8e8e8;
 }
 
-.mb-0{
-  color: white;
-  background-color: black;
+.faq a {
+  color: black;
+  background-color: #e8e8e8;
 }
