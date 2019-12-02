@@ -1,7 +1,7 @@
 /*COMMON--------------------*/
 body {
   font-family: 'Montserrat', !important;
-  background-color: #e788b3 !important;
+  background-color: #D2C4DD !important;
 }
 
 h1, h2, h3, h4, h5, h6  {
@@ -203,6 +203,52 @@ footer .copyright {
   text-decoration: none;
   color: white;
 }
+/*BOLICHES------------------*/
+.boliches.fluid-container.p-0{
+  background-color: #D2C4DD;
+}
+.boliches.card.m-auto.p-3{
+  max-width: 950px;
+  border-radius: 20px;
+}
+.imagen.col-md-4 img{
+  border-radius: 15px;
+}
+.boliche.card-title{
+  font-family: 'Fredoka One' !important;
+  color: #A4A4A4;
+  letter-spacing: 3px;
+
+}
+.boliche.card-text{
+  font-family: 'Montserrat';
+  font-size: 16px;
+}
+.boliche.location{
+  font-family: 'Montserrat';
+  font-size: 18px;
+  color: #02004c;
+}
+
+.boliche.boton button{
+  background-color: #20D0B5;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Fredoka One';
+}
+.boliche.boton button:hover{
+  background-color: #179985;
+  border-radius: 10px;
+  border: none;
+}
+
+.boliche.boton button:active{
+  color: lime;
+  border-radius: 10px;
+  border: none;
+}
+
+
 
 /*CARRITO-------------------*/
 .lista-carrito {
