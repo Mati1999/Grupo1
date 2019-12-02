@@ -8,6 +8,17 @@ $( window ).on( "load", function() {
       $('.common-header').removeClass('solid');
     }
   });
+  // COMMON FOOTER
+
+  $(window).scroll(function(){
+    if ($('.footer').offset() < 100) {
+      $('.columna3').style.position('relative');
+      console.log("relative");
+    } else {
+      $('.columna3').style.position('fixed');
+      console.log("fixed");
+    }
+  });
 
   //SEARCH AND FILTER
   $(document).ready(function(){
