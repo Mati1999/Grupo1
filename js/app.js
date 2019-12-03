@@ -191,9 +191,7 @@ $( window ).on( "load", function() {
       removeProductButtons[i].classList.remove("agregar");
       removeProductButtons[i].classList.add("quitar");
 
-      removeProductButtons[i].addEventListener('click', function(){
-        console.log(this);
-        console.log(this.closest('.card'));
+      removeProductButtons[i].addEventListener('click', function(){        
         listaCarrito.removeChild(this.closest('.card'));
         calcularItemCunt();
       });
