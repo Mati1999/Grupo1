@@ -399,17 +399,21 @@ html.pushbar_locked .pushbar_overlay{
 }
 
 /*PREGUNTAS FRECUENTES------------*/
-.faq .card-header{
-  padding: 0px !important;
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.faq h5 {
-  background-color: #e8e8e8;
+.faq .info {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
-.faq a {
+.faq .info a {
+  text-decoration: none;
   color: black;
-  background-color: #e8e8e8;
+  font-size: 30px;
 }
 
 /* LOG IN */
