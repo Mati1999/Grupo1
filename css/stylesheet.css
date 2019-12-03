@@ -28,6 +28,23 @@ h1, h2, h3, h4, h5, h6  {
   transition: all 2s ease;
 }
 
+.spotify {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  z-index: 10;
+  opacity: 1;
+  border-radius: 100%;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.spotify:hover {
+  border-radius: 0%;
+  width: 300px;
+  opacity: 1;
+}
+
 .solid {
   background-color: black !important;
 }
