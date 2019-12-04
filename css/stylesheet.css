@@ -167,6 +167,10 @@ footer .copyright {
   background-color: black;
 }
 
+footer .row {
+  margin: 0;
+}
+
 /*CONTENIDO CONTAINERS------------------*/
 .contenido-home {
   position: absolute;
