@@ -444,20 +444,37 @@ padding-left: 6px;
 }
 
 .botonDeCierre {
-  color: #fff;
+  color: #A4A4A4;
 }
 
 .colorFuente {
-  color: white;
+  font-family: 'Fredoka One' !important;
+  color: #A4A4A4;
+  letter-spacing: 3px;
 }
 
-.decoracion {
-  color: white;
+.colorDeImput{
+  border-radius: 10px !important;
+  background-color: #20D0B5 !important;
 }
 
-.decoracion:hover {
+.colorDeImput1{
+color: white !important;
+background-color: #20D0B5 !important;
+border-top-right-radius: 10px !important;
+border-bottom-right-radius: 10px !important;
+}
+
+.colorDeImput2{
+color: white !important;
+background-color: #20D0B5 !important;
+border-radius: 10px !important;
+}
+
+
+.colorFuente:hover {
   text-decoration: none;
-  color: white;
+  color: #A4A4A4;
 }
 
 .decoracionHeaderLogIn {
@@ -466,13 +483,16 @@ padding-left: 6px;
 }
 
 .decoracionHeaderLogIn1 {
-  border-bottom: 2px solid black !important;
+  border-top-left-radius: 0.4rem !important;
+  border-top-right-radius: 0.4rem !important;
+  border-bottom: 2px solid #20D0B5 !important;
 }
 
 .botonHeader {
   color: white;
+  border: 1px solid #20D0B5 !important;
   border-bottom: none !important;
-  background-color: rgba(65, 65, 65, 0) ;
+  background-color: #20D0B5 ;
 }
 
 .botonHeader:hover {
@@ -480,13 +500,21 @@ padding-left: 6px;
   border-bottom: none !important;
 }
 
-.decoracionBodyLogIn {
+.decoracionBodyLogIn{
   border-bottom-left-radius: 0.5rem !important;
   border-bottom-right-radius: 0.5rem !important;
 }
 
+.decoracionBodyLogIn1 {
+  border-top-left-radius: 0.6rem !important;
+  border-top-right-radius: 0.6rem !important;
+  border-bottom-left-radius: 0.6rem !important;
+  border-bottom-right-radius: 0.6rem !important;
+}
+
 .botonLogSign {
   box-shadow: 2px 2px 5px black;
+  color: black;
   border: none;
   background-color: white;
   transition: background-color 0.3s;
@@ -496,7 +524,7 @@ padding-left: 6px;
   box-shadow: 2px 2px 5px black;
   border: none;
   color: white;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #20D0B5;
 }
 
 /*PERFIL DE USUARIO-------------*/
