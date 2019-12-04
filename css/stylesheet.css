@@ -409,6 +409,26 @@ html.pushbar_locked .pushbar_overlay{
 }
 
 /*PREGUNTAS FRECUENTES------------*/
+.preguntas.container.text-center.p-3{
+  background-color: #4c39d8;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Montserrat';
+}
+.preguntas.container.text-center.p-3 .boton-preguntas{
+  font-family: 'Fredoka One' !important;
+  font-size: 24px !important;
+  background: none !important;
+  border: 0 !important;
+  color: white !important;
+}
+
+
+
+
+
+
+
 .faq {
   display: flex;
   flex-wrap: wrap;
