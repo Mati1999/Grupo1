@@ -20,14 +20,7 @@ h1, h2, h3, h4, h5, h6  {
   padding-bottom: 20px;
 }
 
-/*HEADER---------------------*/
-.common-header {
-  position: fixed;
-  width: 100vw;
-  z-index: 1;
-  transition: all 2s ease;
-}
-
+/*SPOTIFY--------------------*/
 .spotify {
   position: fixed;
   bottom: 5px;
@@ -45,8 +38,21 @@ h1, h2, h3, h4, h5, h6  {
   opacity: 1;
 }
 
+/*HEADER---------------------*/
+.common-header {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  transition: all 2s ease;
+}
+
 .solid {
   background-color: black !important;
+}
+
+.common-header .show {
+  transition: all 0.5s ease;
+  background-color: black;
 }
 
 .common-header .dropdown-menu {
@@ -425,7 +431,7 @@ border-bottom-left-radius: 0.5rem;
 
 .iconos img{
 padding-top: 10px;
-padding-left: 6px; 
+padding-left: 6px;
 }
 
 .placeHolder{
@@ -438,7 +444,7 @@ padding-left: 6px;
 }
 
 .botonDeCierre{
-  color: #fff; 
+  color: #fff;
 }
 
 .colorFuente{
@@ -497,7 +503,7 @@ padding-left: 6px;
 
 
 
-  /*perfil de usuario-------------*/
+/*PERFIL DE USUARIO-------------*/
 .user{
   background-size: cover;
   background-attachment: fixed;
@@ -570,10 +576,11 @@ height: 100vh;
 /* background: linear-gradient(to right, white, #D2C4DD); */
 }
 
+/*BOLICHES-------------------------*/
 .nombreG{
   background-image: url(../img/boliche-4.jpg);
   background-size: cover;
-  background-position-y: center; 
+  background-position-y: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100px;
