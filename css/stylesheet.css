@@ -642,12 +642,8 @@ padding-left: 6px;
   transform: translateY(-0.50em);
 }
 
-.cupon.card-img-top {
+.cupon .card-img-top {
   border-radius: 10px !important;
-}
-
-.cupon.card-img-top:hover {
-  border-radius: 20px;
 }
 
 .tituloCupon {
