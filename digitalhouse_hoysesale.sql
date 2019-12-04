@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 04-12-2019 a las 22:23:01
+-- Tiempo de generación: 04-12-2019 a las 23:08:15
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.1
 
@@ -102,6 +102,7 @@ CREATE TABLE `productos` (
   `titulo` varchar(50) DEFAULT NULL,
   `descripcion` varchar(200) DEFAULT NULL,
   `stock` int(11) DEFAULT NULL,
+  `imagen` blob NOT NULL,
   `categorias_idCategorias` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -133,6 +134,7 @@ CREATE TABLE `usuarios` (
   `pais` varchar(50) DEFAULT NULL,
   `telefono` int(11) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
+  `imagen` blob NOT NULL,
   `tipo_usuarios_id_tipoUsuario` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
