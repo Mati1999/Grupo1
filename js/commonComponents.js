@@ -98,7 +98,7 @@ class CustomHeader extends HTMLElement {
             <div class="modal-body tab-content decoracionBodyLogIn">
               <form class="needs-validation tab-pane fade active show" autocomplete="off" novalidate="" id="signin-tab">
                 <div class="form-group">
-                  <label class="colorFuente" for="si-email">Correo electrónico</label>
+                  <label class="" for="si-email">Correo electrónico</label>
                   <div class="colorDeImput d-flex">
                   <div class="iconos"><img src="../img/iconmonstr-user-5-32.png" width="80%" height="80%" alt="..."></div>
                   <input class="colorDeImput1 form-control placeHolder" type="email" id="si-email" placeholder="tuCorreo@ejemplo.com" required="">
@@ -106,7 +106,7 @@ class CustomHeader extends HTMLElement {
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="colorFuente" for="si-password">Contraseña</label>
+                  <label class="" for="si-password">Contraseña</label>
                   <div class="colorDeImput password-toggle d-flex">
                   <div class=" iconos"><img src="../img/iconmonstr-email-12-32.png" width="80%" height="80%" alt="..."></div>
                     <input class="colorDeImput1 form-control placeHolder" type="password" id="si-password" required="" placeholder="********">
@@ -118,11 +118,11 @@ class CustomHeader extends HTMLElement {
                 <div class="form-group d-flex flex-wrap justify-content-between">
                   <div class="custom-control custom-checkbox mb-2">
                     <input class="custom-control-input" type="checkbox" id="si-remember">
-                    <label class="custom-control-label colorFuente" for="si-remember">Recordarme</label>
-                  </div><a class="font-size-sm colorFuente" href="#">Olvidaste tu contraseña?</a>
+                    <label class="custom-control-label" for="si-remember">Recordarme</label>
+                  </div><a class="font-size-sm " href="#">Olvidaste tu contraseña?</a>
                 </div>
                 <div class="text-center p-2">
-                  <button class="botonLogSign btn-lg" type="submit">Log in</button>
+                  <button class="btn btn-outline-dark btn-lg" type="submit">Log in</button>
                 </div>
               </form>
 
@@ -131,28 +131,28 @@ class CustomHeader extends HTMLElement {
               <form class="needs-validation tab-pane fade" autocomplete="off" novalidate="" id="signup-tab">
               <div class="form-row">
                 <div class="form-group col-lg-6 col-12 pr-0 pl-0">
-                  <label class="colorFuente" for="su-name">Nombre</label>
+                  <label class="" for="su-name">Nombre</label>
                   <input class="form-control colorDeImput2" type="text" id="su-name" placeholder="Nombre" required="">
                   <div class="invalid-feedback">Porfavor, ingrese su nombre.</div>
                 </div>
                 <div class="form-group col-lg-6 col-12 pl-1">
-                  <label class="colorFuente" for="su-last_name">Apellido</label>
+                  <label class="" for="su-last_name">Apellido</label>
                   <input class="form-control colorDeImput2" type="text" id="su-name" placeholder="Apellido" required="">
                   <div class="invalid-feedback">Porfavor, ingrese su apellido.</div>
                 </div>
                 </div>
                 <div class="form-group">
-                  <label class="colorFuente" for="su-email">Fecha de nacimiento</label>
+                  <label class="" for="su-email">Fecha de nacimiento</label>
                   <input class="form-control colorDeImput2" type="email" id="su-email" placeholder="AAAA/MM/DD" required="">
                   <div class="invalid-feedback">Porfavor, ingrese una fecha válida.</div>
                 </div>
                 <div class="form-group">
-                  <label class="colorFuente" for="su-email">Correo electrónico</label>
+                  <label class="" for="su-email">Correo electrónico</label>
                   <input class="form-control colorDeImput2" type="email" id="su-email" placeholder="tuCorreo@ejemplo.com" required="">
                   <div class="invalid-feedback">Porfavor, ingrese un correo válido.</div>
                 </div>
                 <div class="form-group contra">
-                  <label class="colorFuente" for="su-password">Contraseña</label>
+                  <label class="" for="su-password">Contraseña</label>
                   <div class="password-toggle">
                     <input class="form-control colorDeImput2" type="password" id="su-password" required="" placeholder="********">
                     <!-- <label class="password-toggle-btn">
@@ -161,32 +161,32 @@ class CustomHeader extends HTMLElement {
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="colorFuente" for="su-password-confirm">Confirmar contraseña</label>
+                  <label class="" for="su-password-confirm">Confirmar contraseña</label>
                   <div class="password-toggle">
                     <input class="form-control colorDeImput2" type="password" id="su-password-confirm" required="" placeholder="********">
                   </div>
                 </div>
                 <div class="form-row">
                 <div class="form-group col-lg-4 col-12 pl-2">
-                  <label class="colorFuente" for="su-name">País</label>
+                  <label class="" for="su-name">País</label>
                   <input class="form-control colorDeImput2" type="text" id="su-name" placeholder="País" required="">
                 </div>
                 <div class="form-group col-lg-4 col-12 pl-2">
-                  <label class="colorFuente" for="su-name">Ciudad</label>
+                  <label class="" for="su-name">Ciudad</label>
                   <input class="form-control colorDeImput2" type="text" id="su-name" placeholder="Ciudad" required="">
                 </div>
                 <div class="form-group col-lg-4 col-12 pl-2">
-                  <label class="colorFuente" for="su-name">Provincia</label>
+                  <label class="" for="su-name">Provincia</label>
                   <input class="form-control colorDeImput2" type="text" id="su-name" placeholder="Provincia" required="">
                 </div>
                 </div>
                 <div class="form-group col-lg-12 col-12 pl-0 pr-0">
-                  <label class="colorFuente" for="su-name">Direccion</label>
+                  <label class="" for="su-name">Direccion</label>
                   <input class="form-control colorDeImput2" type="text" id="su-name" placeholder="Direccion" required="">
                   <div class="invalid-feedback">Porfavor, ingrese una dirección válida.</div>
                 </div>
                 <div class="text-center p-2">
-                  <button class="botonLogSign btn-lg" type="submit">Registráte</button>
+                  <button class="btn btn-outline-dark btn-lg" type="submit">Registráte</button>
                 </div>
               </form>
           </div>
