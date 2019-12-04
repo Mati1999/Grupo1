@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 28-11-2019 a las 19:45:44
+-- Tiempo de generación: 04-12-2019 a las 22:23:01
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.1
 
@@ -46,6 +46,23 @@ CREATE TABLE `detalle_pedido` (
   `cantidad` int(11) DEFAULT NULL,
   `pedidos_id_pedido` int(11) DEFAULT NULL,
   `productos_id_producto` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `direcciones`
+--
+
+CREATE TABLE `direcciones` (
+  `id_direccion` int(11) NOT NULL,
+  `direccion` varchar(50) DEFAULT NULL,
+  `altura` int(11) DEFAULT NULL,
+  `departamento` varchar(10) DEFAULT NULL,
+  `ciudad` varchar(50) DEFAULT NULL,
+  `provincia` varchar(50) DEFAULT NULL,
+  `pais` varchar(50) DEFAULT NULL,
+  `clientes_id_usuario` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -138,6 +155,13 @@ ALTER TABLE `detalle_pedido`
   ADD KEY `productos_id_producto` (`productos_id_producto`);
 
 --
+-- Indices de la tabla `direcciones`
+--
+ALTER TABLE `direcciones`
+  ADD PRIMARY KEY (`id_direccion`),
+  ADD KEY `clientes_id_usuario` (`clientes_id_usuario`);
+
+--
 -- Indices de la tabla `estado_pedidos`
 --
 ALTER TABLE `estado_pedidos`
@@ -188,6 +212,12 @@ ALTER TABLE `detalle_pedido`
   MODIFY `id_detallePedido` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de la tabla `direcciones`
+--
+ALTER TABLE `direcciones`
+  MODIFY `id_direccion` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `estado_pedidos`
 --
 ALTER TABLE `estado_pedidos`
@@ -227,6 +257,12 @@ ALTER TABLE `usuarios`
 ALTER TABLE `detalle_pedido`
   ADD CONSTRAINT `detalle_pedido_ibfk_1` FOREIGN KEY (`pedidos_id_pedido`) REFERENCES `pedidos` (`id_pedido`),
   ADD CONSTRAINT `detalle_pedido_ibfk_2` FOREIGN KEY (`productos_id_producto`) REFERENCES `pedidos` (`id_pedido`);
+
+--
+-- Filtros para la tabla `direcciones`
+--
+ALTER TABLE `direcciones`
+  ADD CONSTRAINT `direcciones_ibfk_1` FOREIGN KEY (`clientes_id_usuario`) REFERENCES `usuarios` (`id_usuario`);
 
 --
 -- Filtros para la tabla `pedidos`
