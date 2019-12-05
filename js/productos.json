@@ -1,0 +1,80 @@
+[
+  {
+    "id_producto": 1,
+    "titulo": "Bebida 1",
+    "descripcion": "Esta es la bebida 1",
+    "stock": "100",
+    "imagen": "String de la imagen",
+    "categoria": {
+      "id_categoria": 1,
+      "descripcion": "Bebidas",
+      "vigencia_desde": "2019-01-01",
+      "vigencia_hasta": ""
+    }
+  },
+  {
+    "id_producto": 2,
+    "titulo": "Bebida 2",
+    "descripcion": "Esta es la bebida 2",
+    "stock": "200",
+    "imagen": "String de la imagen",
+    "categoria": {
+      "id_categoria": 1,
+      "descripcion": "Bebidas",
+      "vigencia_desde": "2019-01-01",
+      "vigencia_hasta": ""
+    }
+  },
+  {
+    "id_producto": 3,
+    "titulo": "Bebida 3",
+    "descripcion": "Esta es la bebida 3",
+    "stock": "300",
+    "imagen": "String de la imagen",
+    "categoria": {
+      "id_categoria": 1,
+      "descripcion": "Bebidas",
+      "vigencia_desde": "2019-01-01",
+      "vigencia_hasta": ""
+    }
+  },
+  {
+    "id_producto": 4,
+    "titulo": "Bebida 4",
+    "descripcion": "Esta es la bebida 4",
+    "stock": "400",
+    "imagen": "String de la imagen",
+    "categoria": {
+      "id_categoria": 1,
+      "descripcion": "Bebidas",
+      "vigencia_desde": "2019-01-01",
+      "vigencia_hasta": ""
+    }
+  },
+  {
+    "id_producto": 5,
+    "titulo": "Bebida 5",
+    "descripcion": "Esta es la bebida 5",
+    "stock": "500",
+    "imagen": "String de la imagen",
+    "categoria": {
+      "id_categoria": 1,
+      "descripcion": "Bebidas",
+      "vigencia_desde": "2019-01-01",
+      "vigencia_hasta": ""
+    }
+  },
+  {
+    "id_producto": 6,
+    "titulo": "Bebida 6",
+    "descripcion": "Esta es la bebida 6",
+    "stock": "600",
+    "imagen": "String de la imagen",
+    "categoria": {
+      "id_categoria": 1,
+      "descripcion": "Bebidas",
+      "vigencia_desde": "2019-01-01",
+      "vigencia_hasta": ""
+    }
+  }
+]
