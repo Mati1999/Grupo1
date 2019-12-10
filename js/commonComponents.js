@@ -66,12 +66,13 @@ class CustomHeader extends HTMLElement {
         <h4 class="tituloCarrito">Carrito de Compras</h4>
 
         <div class="lista-carrito" id="lista-carrito">
+          <ul class="list-group list-group-flush">
 
+          </ul>
         </div>
 
         <div class="total">
-          <span class="precio-total">Total: $</span>
-          <span>0</span>
+          <h4 class="precio-total">Total: $0</h4>
         </div>
 
       </div>

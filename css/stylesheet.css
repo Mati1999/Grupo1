@@ -210,6 +210,7 @@ footer .row {
 
 .section-products {
   margin-bottom: 20px;
+  padding: 0px !important;
 }
 
 .section-products .card {
@@ -293,6 +294,10 @@ footer .row {
 
 .tituloCarrito {
   text-align: center;
+  padding: 10px;
+}
+
+.total {
   padding: 10px;
 }
 
