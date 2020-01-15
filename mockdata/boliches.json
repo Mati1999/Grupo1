@@ -4,41 +4,41 @@
     "titulo": "Boliche 1",
     "descripcion": "Este es el boliche 1",
     "domicilio": "Domicilio 1",
-    "imagen": "String de la imagen"
+    "imagen": "../img/boliche-1.jpg"
   },
   {
     "id_boliche": 2,
     "titulo": "Boliche 2",
     "descripcion": "Este es el boliche 2",
     "domicilio": "Domicilio 2",
-    "imagen": "String de la imagen"
+    "imagen": "../img/boliche-2.jpg"
   },
   {
     "id_boliche": 3,
     "titulo": "Boliche 3",
     "descripcion": "Este es el boliche 3",
     "domicilio": "Domicilio 3",
-    "imagen": "String de la imagen"
+    "imagen": "../img/boliche-3.jpg"
   },
   {
     "id_boliche": 4,
     "titulo": "Boliche 4",
     "descripcion": "Este es el boliche 4",
     "domicilio": "Domicilio 4",
-    "imagen": "String de la imagen"
+    "imagen": "../img/boliche-4.jpg"
   },
   {
     "id_boliche": 5,
     "titulo": "Boliche 5",
     "descripcion": "Este es el boliche 5",
     "domicilio": "Domicilio 5",
-    "imagen": "String de la imagen"
+    "imagen": "../img/boliche-5.jpg"
   },
   {
     "id_boliche": 6,
     "titulo": "Boliche 6",
     "descripcion": "Este es el boliche 6",
     "domicilio": "Domicilio 6",
-    "imagen": "String de la imagen"
+    "imagen": "../img/boliche-6.jpg"
   }
 ]
