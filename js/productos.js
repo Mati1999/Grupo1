@@ -56,7 +56,7 @@ $( window ).on( "load", function() {
   //GET CATEGORIES ------------------------------------------------------------
   const requestCategorias = new XMLHttpRequest();
 
-  requestCategorias.open('GET', 'http://localhost:8080/mockdata/categorias.json', true);
+  requestCategorias.open('GET', 'http://localhost:8081/bebidas/listarcategorias', true);
   requestCategorias.send();
   requestCategorias.onreadystatechange = function () {
     if(this.readyState == 4 && this.status == 200) {
@@ -82,7 +82,7 @@ $( window ).on( "load", function() {
 
   //GET PRODUCTOS -------------------------------------------------------------
   const requestProductos = new XMLHttpRequest();
-  requestProductos.open('GET', 'http://localhost:8080/mockdata/productos.json', true);
+  requestProductos.open('GET', 'http://localhost:8081/bebidas/listarbebidas', true);
   requestProductos.send();
   requestProductos.onreadystatechange = function () {
     if(this.readyState == 4 && this.status == 200) {
@@ -94,13 +94,13 @@ $( window ).on( "load", function() {
       for(var i=0; i < productosJson.length; i++) {
         //Create a new card-producto
         let card = document.createElement("card-producto");
-        card.setAttribute("id", productosJson[i].id_producto);
-        card.classList.add(productosJson[i].categoria.descripcion);
+        card.setAttribute("id", productosJson[i].id_bebida);
+        card.classList.add(productosJson[i].categoria.nombre);
         card.classList.add("grid-item");
         grid.appendChild(card);
 
-        card.getElementsByClassName("card-img-top")[0].setAttribute('src', productosJson[i].imagen);
-        card.getElementsByClassName("card-title")[0].innerText = productosJson[i].titulo;
+        card.getElementsByClassName("card-img-top")[0].setAttribute('src', '../img/' + productosJson[i].imagen);
+        card.getElementsByClassName("card-title")[0].innerText = productosJson[i].nombre;
         card.getElementsByClassName("card-text")[0].innerText = productosJson[i].descripcion;
         card.getElementsByClassName("card-price")[0].innerText = "$" + productosJson[i].precio;
       }
