@@ -47,15 +47,8 @@ window.customElements.define('item-carrito', ItemCarrito);
 
 $( window ).on( "load", function() {
 
-  //Para poder servir los Jsons:
-  //1- Descargar la extension "Moesif Orign & CORS Changer" de Chrome
-  //2- Descargar XAMPP o cualquier servidor Apache.
-  //3- Copiar los archivos json dentro del directorio htdocs de XAMPP
-  //4- Iniciar XAMPP, buscar la URL para acceder a esos archivos y armar el request
-
   //GET CATEGORIES ------------------------------------------------------------
   const requestCategorias = new XMLHttpRequest();
-
   requestCategorias.open('GET', 'http://localhost:8081/bebidas/listarcategorias', true);
   requestCategorias.send();
   requestCategorias.onreadystatechange = function () {
