@@ -49,7 +49,7 @@ $( window ).on( "load", function() {
 
   //GET CATEGORIES ------------------------------------------------------------
   const requestCategorias = new XMLHttpRequest();
-  requestCategorias.open('GET', 'http://localhost:8081/bebidas/listarcategorias', true);
+  requestCategorias.open('GET', 'http://localhost:8081/categorias/listar', true);
   requestCategorias.send();
   requestCategorias.onreadystatechange = function () {
     if(this.readyState == 4 && this.status == 200) {
@@ -75,7 +75,7 @@ $( window ).on( "load", function() {
 
   //GET PRODUCTOS -------------------------------------------------------------
   const requestProductos = new XMLHttpRequest();
-  requestProductos.open('GET', 'http://localhost:8081/bebidas/listarbebidas', true);
+  requestProductos.open('GET', 'http://localhost:8081/bebidas/listar', true);
   requestProductos.send();
   requestProductos.onreadystatechange = function () {
     if(this.readyState == 4 && this.status == 200) {

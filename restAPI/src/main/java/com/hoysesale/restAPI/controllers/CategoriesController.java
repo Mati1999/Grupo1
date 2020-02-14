@@ -7,21 +7,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hoysesale.restAPI.entities.Bebida;
-import com.hoysesale.restAPI.services.IBebidasService;
+import com.hoysesale.restAPI.entities.Categoria;
+import com.hoysesale.restAPI.services.ICategoriaService;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/bebidas")
-public class ProductsController {
+@RequestMapping("/categorias")
+public class CategoriesController {
 	
 	@Autowired
-	@Qualifier("BebidaServiceImpl")
-	private IBebidasService bebidaService;
-
+	@Qualifier("CategoriaServiceImpl")
+	private ICategoriaService categoriasService;
+	
 	@GetMapping("/listar")
-	public Iterable<Bebida> getBebidas() {
-		return bebidaService.getBebidas();
+	public Iterable<Categoria> getCategorias() {
+		return categoriasService.getCategorias();
 	}
 	
 }
