@@ -19,7 +19,7 @@ public class ProductsController {
 	@Qualifier("BebidaServiceImpl")
 	private IBebidasService bebidaService;
 
-	@GetMapping("/listar")
+	@GetMapping("/getBebidas")
 	public Iterable<Bebida> getBebidas() {
 		return bebidaService.getBebidas();
 	}

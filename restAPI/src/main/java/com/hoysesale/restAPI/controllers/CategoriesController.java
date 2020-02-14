@@ -19,7 +19,7 @@ public class CategoriesController {
 	@Qualifier("CategoriaServiceImpl")
 	private ICategoriaService categoriasService;
 	
-	@GetMapping("/listar")
+	@GetMapping("/getCategorias")
 	public Iterable<Categoria> getCategorias() {
 		return categoriasService.getCategorias();
 	}
