@@ -60,16 +60,10 @@ window.customElements.define('item-carrito', ItemCarrito);
 
 $( window ).on( "load", function() {
 
-  //Para poder servir los Jsons:
-  //1- Descargar la extension "Moesif Orign & CORS Changer" de Chrome
-  //2- Descargar XAMPP o cualquier servidor Apache.
-  //3- Copiar los archivos json dentro del directorio htdocs de XAMPP
-  //4- Iniciar XAMPP, buscar la URL para acceder a esos archivos y armar el request
-
   //GET BOLICHES ------------------------------------------------------------
   const requestBoliches = new XMLHttpRequest();
 
-  requestBoliches.open('GET', 'http://localhost:8080/mockdata/boliches.json', true);
+  requestBoliches.open('GET', 'http://localhost:8081/boliches/getBoliches', true);
   requestBoliches.send();
   requestBoliches.onreadystatechange = function () {
     if(this.readyState == 4 && this.status == 200) {
@@ -85,9 +79,9 @@ $( window ).on( "load", function() {
         boliche.setAttribute("id", bolichesJson[i].id_boliche);
         boliches.appendChild(boliche);
 
-        boliche.getElementsByClassName("card-img")[0].setAttribute('src', bolichesJson[i].imagen);
-        boliche.getElementsByClassName("card-title")[0].innerText = bolichesJson[i].titulo;
-        boliche.getElementsByClassName("card-text")[0].innerText = bolichesJson[i].descripcion;
+        boliche.getElementsByClassName("card-img")[0].setAttribute('src', '../img/' + bolichesJson[i].imagen);
+        boliche.getElementsByClassName("card-title")[0].innerText = bolichesJson[i].nombre;
+        boliche.getElementsByClassName("card-text")[0].innerText = bolichesJson[i].domicilio;
       }
 
     }
