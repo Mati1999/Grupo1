@@ -229,7 +229,7 @@ footer .row {
 
 .section-products a {
   text-decoration: none;
-  color: white;
+  color: white !important;
 }
 /*BOLICHES------------------*/
 .boliches.fluid-container.p-0{
