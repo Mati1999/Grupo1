@@ -6,7 +6,6 @@ class CustomHeader extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-
     <header class="common-header">
       <nav class="navbar navbar-expand-lg ">
         <ion-icon name="beer" size="large" style="color:white;"></ion-icon>
@@ -26,7 +25,7 @@ class CustomHeader extends HTMLElement {
               <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="products.html">Bebidas</a>
                 <a class="dropdown-item" href="boliches.html">Boliches</a>
-                <a class="dropdown-item" href="promociones.html">Promociones</a>
+              </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,7 +53,6 @@ class CustomHeader extends HTMLElement {
             </li>
           </ul>
         </div>
-
       </nav>
 
       <!-- CONTENIDO DE PUSHBAR CARRITO ----------------------------------------------->
